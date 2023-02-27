@@ -28,4 +28,4 @@ alias mem="sudo python ~/ps_mem.py"
 alias hint="echo; cat $BASH_SRC_PATH/.ubuntu_hints; echo; echo; cat $BASH_SRC_PATH/.hints; echo; echo"
 
 # show login message
-. "$BASH_SRC_PATH"/.ubuntu_login
+# . "$BASH_SRC_PATH"/.ubuntu_login
