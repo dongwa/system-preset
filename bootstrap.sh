@@ -6,14 +6,6 @@
 mkdir -p "/usr/local/lib"
 mkdir -p "/usr/local/bin"
 
-# System Specific
-if [[ ! "$SSH_TTY" && "$OSTYPE" =~ ^linux ]]; 
-	# if ubuntu， install git and curl
-  echo "Installing git and curl..."
-  apt-get update   
-  apt-get install git curl
-fi
-
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
@@ -22,7 +14,7 @@ if test ! $(which brew); then
   export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
   export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
   export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
-  /bin/bash -c "$(curl -fsSL https://github.com/Homebrew/install/raw/HEAD/install.sh)"
+  ruby -c "$(curl -fsSL https://github.com/Homebrew/install/raw/HEAD/install.sh)"
 fi
 
 # Update homebrew recipes

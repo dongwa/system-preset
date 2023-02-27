@@ -23,9 +23,3 @@ alias nr="sudo restart nginx"
 
 # show memory usage
 alias mem="sudo python ~/ps_mem.py"
-
-# hint for these shortcuts
-alias hint="echo; cat $BASH_SRC_PATH/.ubuntu_hints; echo; echo; cat $BASH_SRC_PATH/.hints; echo; echo"
-
-# show login message
-# . "$BASH_SRC_PATH"/.ubuntu_login
