@@ -1,0 +1,8 @@
+nl      npm list top level only
+ng      npm list top level only (global)
+la      list include .files
+ll      list detailed info
+fs      file size in bytes
+md      mkdir and enter it
+clean   remove everything in current dir
+pg      ps ax | grep ...

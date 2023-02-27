@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# make aliases sudo-able
+alias sudo="sudo "
+
+# directory navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# some ls aliases
+alias la="ls -A"
+alias ll="ls -Al"
+
+# npm script shortcuts
+alias i="ni"
+alias t="nr test"
+alias b="nr build"
+alias tb="nr test-build"
+alias d="nr dev"
+alias dd="nr debug"
+alias s="nr serve"
+alias de="nr dev-example"
+alias be="nr build-example"
+alias vr="vitest run"
+
+# debug vite
+alias dv="node --inspect-brk /Users/evan/Vue/vite/packages/vite/bin/vite"
+
+# git shortcuts
+alias gs="git status"
+alias ga="git add -A ."
+alias gc="git commit"
+alias gb="git branch"
+alias gd="git diff"
+alias gco="git checkout"
+alias gp="git push"
+alias gl="git pull"
+alias gt="git tag"
+alias gm="git merge"
+alias gg="git log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr) %C(bold blue)<%an>%Creset %C(yellow)%ad%Creset' --abbrev-commit --date=short"
+alias ggr="git log --reverse --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr) %C(bold blue)<%an>%Creset %C(yellow)%ad%Creset' --abbrev-commit --date=short"
+alias gcp="git cherry-pick"
+alias gcpc="git cherry-pick --continue"
+alias gcpa="git cherry-pick --abort"
+alias gbg="git bisect good"
+alias gbb="git bisect bad"
+alias gcd='git config user.name dongwa && git config user.email 783137663@qq.com'
+alias gcmi='git config user.name donglin && git config user.email leidonglin@xiaomi.com'
+
+# blogging shortcuts
+alias hs="hexo server"
+
+# npm shortcuts that only list top-level modules
+alias l="yarn list --depth=0 2>/dev/null"
+alias lg="npm list -g --depth=0 2>/dev/null"
+
+# process finding
+alias pg="pgrep -lf"

@@ -1,0 +1,65 @@
+#!/bin/bash
+
+# Configs for development machine
+echo 'OSX profile loaded.'
+
+# A color scheme that loosely matches Ubuntu's default scheme.
+
+# The color designators are as follows:
+
+# a black
+# b red
+# c green
+# d brown
+# e blue
+# f magenta
+# g cyan
+# h light grey
+# A bold black, usually shows up as dark grey
+# B bold red
+# C bold green
+# D bold brown, usually shows up as yellow
+# E bold blue
+# F bold magenta
+# G bold cyan
+# H bold light grey; looks like bright white
+# x default foreground or background
+
+# Note that the above are standard ANSI colors. The actual
+# display may differ depending on the color capabilities of
+# the terminal in use.
+
+# The order of the attributes are as follows:
+
+# 1. directory
+# 2. symbolic link
+# 3. socket
+# 4. pipe
+# 5. executable
+# 6. block special
+# 7. character special
+# 8. executable with setuid bit set
+# 9. executable with setgid bit set
+# 10. directory writable to others, with sticky bit
+# 11. directory writable to others, without sticky bit
+
+export CLICOLOR=1
+export LSCOLORS=ExGxdxDxCxegedhbadaced
+
+# set default editor
+export EDITOR='code'
+export VISUAL="$EDITOR"
+
+# recursively delete .DS_Store
+alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
+
+# recursively delete node_modules
+alias nodemodules="find . -name "node_modules" -exec rm -rf '{}' +"
+
+# hint for these shortcuts
+alias hint="echo; cat $BASH_SRC_PATH/.hints; echo; echo"
+
+# shortcut for uploading quick static files to VPS
+function sketch() {
+    scp -r $1 evan@do:/srv/static/sketch/$2
+}

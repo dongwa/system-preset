@@ -1,0 +1,4 @@
+ngc     nginx config
+ncc     clear nginx cache
+nr      restart nginx
+mem     show memory usage

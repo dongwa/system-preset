@@ -1,0 +1,8 @@
+#!/bin/bash
+# Log system status
+echo
+echo "  CPU - "$(mpstat | awk '$12 ~ /[0-9.]+/ { print $12 }')"% Idle"
+echo "  MEM - "$(free -m | grep "buffers\/cache" | awk '{ print $4 }')" MB Free"
+
+# Log pod status
+pod list
