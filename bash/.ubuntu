@@ -4,8 +4,8 @@
 echo 'Ubuntu profile loaded.'
 
 # set default editor
-export EDITOR='nano -w'
-export VISUAL="$EDITOR"
+# export EDITOR='nano -w'
+# export VISUAL="$EDITOR"
 
 # enable ls colors
 alias ls="ls --color=auto"
