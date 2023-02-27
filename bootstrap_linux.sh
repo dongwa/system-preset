@@ -46,7 +46,7 @@ apps=(
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
-apt-install install ${apps[@]}
+apt-get install ${apps[@]}
 
 # clone this repo
 git clone https://github.com/dongwa/system-preset ~/.dotfiles
