@@ -4,17 +4,16 @@
 mkdir -p "/usr/local/lib"
 mkdir -p "/usr/local/bin"
 
-sudo apt-get update   
-sudo apt-get install git curl
+sudo apt-get update -y
+# Install npm
+echo "Installing git,curl and npm..."
+sudo apt-get install git curl npm -y
 
 # brew install git
 # Some git defaults
 git config --global color.ui true
 git config --global push.default simple
 
-# Install npm
-echo "Installing npm..."
-sudo apt-get install npm
 
 # Install common use global Node modules
 modules=(
@@ -46,7 +45,7 @@ apps=(
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
-sudo apt-get install ${apps[@]}
+sudo apt-get install ${apps[@]} -y
 
 # clone this repo
 git clone https://github.com/dongwa/system-preset ~/.dotfiles
