@@ -52,5 +52,5 @@ sudo apt-get install ${apps[@]} -y
 git clone https://github.com/dongwa/system-preset ~/.dotfiles
 
 # Source dot files
-echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
-source ~/.profile
+echo '. ~/.dotfiles/bash/.profile' >> ~/.bashrc
+source ~/.bashrc
