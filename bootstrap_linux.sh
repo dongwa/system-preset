@@ -39,6 +39,8 @@ sudo n lts
 # Apps
 apps=(
   microsoft-edge-stable
+  fcitx-googlepinyin
+  # xiaomi-miwork-stable #小米办公
 )
 
 # Install apps to /Applications
