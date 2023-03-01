@@ -39,6 +39,7 @@ sudo n lts
 apps=(
   microsoft-edge-stable
   fcitx-googlepinyin
+  code
   # xiaomi-miwork-stable #小米办公
 )
 
