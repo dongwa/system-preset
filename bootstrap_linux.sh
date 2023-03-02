@@ -40,6 +40,7 @@ apps=(
   microsoft-edge-stable
   fcitx-googlepinyin
   code
+  vim
   # xiaomi-miwork-stable #小米办公
 )
 
