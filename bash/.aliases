@@ -48,6 +48,15 @@ alias gbg="git bisect good"
 alias gbb="git bisect bad"
 alias gcd='git config user.name dongwa && git config user.email 783137663@qq.com'
 alias gcmi='git config user.name donglin && git config user.email leidonglin@xiaomi.com'
+alias gm='git commit -m'
+
+alias pni='pnpm i'    
+alias ni='npm i'
+alias d='npm run dev'
+
+alias g='git clone'
+alias greset='git reset HEAD~'
+alias ga='git commit --amend'
 
 # blogging shortcuts
 alias hs="hexo server"
